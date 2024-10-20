@@ -1,121 +1,121 @@
 {
   "names": {
     "all": {
-      "Lucie": 7,
-      "Michal": 4,
-      "Jiří": 4,
-      "Petr": 4,
-      "Kateřina": 3,
-      "František": 3,
-      "Josef": 3,
-      "Anna": 3,
-      "Věra": 3,
-      "Jan": 3,
-      "Hana": 2,
-      "Martin": 2,
-      "Jana": 2,
-      "Marie": 2,
+      "Alena": 6,
+      "Jana": 4,
+      "Jan": 4,
+      "Kateřina": 4,
+      "Anna": 4,
+      "Martin": 3,
+      "Lenka": 3,
+      "Lucie": 2,
       "Tomáš": 2,
-      "Lenka": 2,
-      "Eva": 1
+      "Petr": 2,
+      "Eva": 2,
+      "František": 2,
+      "Josef": 2,
+      "Marie": 2,
+      "Michal": 2,
+      "Hana": 2,
+      "Věra": 1,
+      "Pavel": 1,
+      "Jaroslav": 1,
+      "Jiří": 1
     },
     "male": {
-      "Michal": 4,
-      "Jiří": 4,
-      "Petr": 4,
-      "František": 3,
-      "Josef": 3,
+      "Alena": 4,
       "Jan": 3,
+      "Tomáš": 2,
       "Martin": 2,
-      "Tomáš": 2
+      "Lenka": 2,
+      "Josef": 2,
+      "Kateřina": 2,
+      "Jana": 2,
+      "Eva": 1,
+      "Lucie": 1,
+      "Michal": 1,
+      "Pavel": 1,
+      "Marie": 1,
+      "František": 1,
+      "Jiří": 1,
+      "Anna": 1
     },
     "female": {
-      "Lucie": 7,
-      "Kateřina": 3,
       "Anna": 3,
-      "Věra": 3,
-      "Hana": 2,
+      "Petr": 2,
       "Jana": 2,
-      "Marie": 2,
-      "Lenka": 2,
-      "Eva": 1
+      "Kateřina": 2,
+      "Alena": 2,
+      "Hana": 2,
+      "Lucie": 1,
+      "Lenka": 1,
+      "František": 1,
+      "Eva": 1,
+      "Věra": 1,
+      "Marie": 1,
+      "Michal": 1,
+      "Jaroslav": 1,
+      "Jan": 1,
+      "Martin": 1
     },
     "femalePartTime": {
-      "Lucie": 7,
-      "Anna": 3,
-      "Hana": 2,
-      "Marie": 2,
-      "Věra": 2,
-      "Lenka": 2,
+      "Petr": 2,
+      "Lucie": 1,
       "Kateřina": 1,
+      "František": 1,
       "Eva": 1,
+      "Anna": 1,
+      "Věra": 1,
+      "Marie": 1,
+      "Michal": 1,
+      "Alena": 1,
+      "Jaroslav": 1,
+      "Hana": 1,
+      "Jan": 1,
       "Jana": 1
     },
     "maleFullTime": {
-      "Michal": 1,
-      "František": 1,
-      "Tomáš": 1,
-      "Jiří": 1,
-      "Petr": 1,
-      "Jan": 1
+      "Jana": 2,
+      "Lenka": 1,
+      "Eva": 1,
+      "Kateřina": 1,
+      "Martin": 1,
+      "Josef": 1,
+      "František": 1
     }
   },
   "chartData": {
     "all": [
       {
-        "label": "Lucie",
-        "value": 7
+        "label": "Alena",
+        "value": 6
       },
       {
-        "label": "Michal",
+        "label": "Jana",
         "value": 4
       },
       {
-        "label": "Jiří",
-        "value": 4
-      },
-      {
-        "label": "Petr",
+        "label": "Jan",
         "value": 4
       },
       {
         "label": "Kateřina",
-        "value": 3
-      },
-      {
-        "label": "František",
-        "value": 3
-      },
-      {
-        "label": "Josef",
-        "value": 3
+        "value": 4
       },
       {
         "label": "Anna",
-        "value": 3
-      },
-      {
-        "label": "Věra",
-        "value": 3
-      },
-      {
-        "label": "Jan",
-        "value": 3
-      },
-      {
-        "label": "Hana",
-        "value": 2
+        "value": 4
       },
       {
         "label": "Martin",
-        "value": 2
+        "value": 3
       },
       {
-        "label": "Jana",
-        "value": 2
+        "label": "Lenka",
+        "value": 3
       },
       {
-        "label": "Marie",
+        "label": "Lucie",
         "value": 2
       },
       {
@@ -123,67 +123,77 @@
         "value": 2
       },
       {
-        "label": "Lenka",
+        "label": "Petr",
         "value": 2
       },
       {
         "label": "Eva",
+        "value": 2
+      },
+      {
+        "label": "František",
+        "value": 2
+      },
+      {
+        "label": "Josef",
+        "value": 2
+      },
+      {
+        "label": "Marie",
+        "value": 2
+      },
+      {
+        "label": "Michal",
+        "value": 2
+      },
+      {
+        "label": "Hana",
+        "value": 2
+      },
+      {
+        "label": "Věra",
+        "value": 1
+      },
+      {
+        "label": "Pavel",
+        "value": 1
+      },
+      {
+        "label": "Jaroslav",
+        "value": 1
+      },
+      {
+        "label": "Jiří",
         "value": 1
       }
     ],
     "male": [
       {
-        "label": "Michal",
+        "label": "Alena",
         "value": 4
-      },
-      {
-        "label": "Jiří",
-        "value": 4
-      },
-      {
-        "label": "Petr",
-        "value": 4
-      },
-      {
-        "label": "František",
-        "value": 3
-      },
-      {
-        "label": "Josef",
-        "value": 3
       },
       {
         "label": "Jan",
         "value": 3
       },
       {
+        "label": "Tomáš",
+        "value": 2
+      },
+      {
         "label": "Martin",
         "value": 2
       },
       {
-        "label": "Tomáš",
+        "label": "Lenka",
         "value": 2
-      }
-    ],
-    "female": [
+      },
       {
-        "label": "Lucie",
-        "value": 7
+        "label": "Josef",
+        "value": 2
       },
       {
         "label": "Kateřina",
-        "value": 3
-      },
-      {
-        "label": "Anna",
-        "value": 3
-      },
-      {
-        "label": "Věra",
-        "value": 3
-      },
-      {
-        "label": "Hana",
         "value": 2
       },
       {
@@ -191,49 +201,155 @@
         "value": 2
       },
       {
-        "label": "Marie",
-        "value": 2
-      },
-      {
-        "label": "Lenka",
-        "value": 2
-      },
-      {
         "label": "Eva",
         "value": 1
-      }
-    ],
-    "femalePartTime": [
+      },
       {
         "label": "Lucie",
-        "value": 7
+        "value": 1
+      },
+      {
+        "label": "Michal",
+        "value": 1
+      },
+      {
+        "label": "Pavel",
+        "value": 1
+      },
+      {
+        "label": "Marie",
+        "value": 1
+      },
+      {
+        "label": "František",
+        "value": 1
+      },
+      {
+        "label": "Jiří",
+        "value": 1
       },
       {
         "label": "Anna",
+        "value": 1
+      }
+    ],
+    "female": [
+      {
+        "label": "Anna",
         "value": 3
+      },
+      {
+        "label": "Petr",
+        "value": 2
+      },
+      {
+        "label": "Jana",
+        "value": 2
+      },
+      {
+        "label": "Kateřina",
+        "value": 2
+      },
+      {
+        "label": "Alena",
+        "value": 2
       },
       {
         "label": "Hana",
         "value": 2
       },
       {
-        "label": "Marie",
-        "value": 2
-      },
-      {
-        "label": "Věra",
-        "value": 2
+        "label": "Lucie",
+        "value": 1
       },
       {
         "label": "Lenka",
+        "value": 1
+      },
+      {
+        "label": "František",
+        "value": 1
+      },
+      {
+        "label": "Eva",
+        "value": 1
+      },
+      {
+        "label": "Věra",
+        "value": 1
+      },
+      {
+        "label": "Marie",
+        "value": 1
+      },
+      {
+        "label": "Michal",
+        "value": 1
+      },
+      {
+        "label": "Jaroslav",
+        "value": 1
+      },
+      {
+        "label": "Jan",
+        "value": 1
+      },
+      {
+        "label": "Martin",
+        "value": 1
+      }
+    ],
+    "femalePartTime": [
+      {
+        "label": "Petr",
         "value": 2
+      },
+      {
+        "label": "Lucie",
+        "value": 1
       },
       {
         "label": "Kateřina",
         "value": 1
       },
       {
+        "label": "František",
+        "value": 1
+      },
+      {
         "label": "Eva",
+        "value": 1
+      },
+      {
+        "label": "Anna",
+        "value": 1
+      },
+      {
+        "label": "Věra",
+        "value": 1
+      },
+      {
+        "label": "Marie",
+        "value": 1
+      },
+      {
+        "label": "Michal",
+        "value": 1
+      },
+      {
+        "label": "Alena",
+        "value": 1
+      },
+      {
+        "label": "Jaroslav",
+        "value": 1
+      },
+      {
+        "label": "Hana",
+        "value": 1
+      },
+      {
+        "label": "Jan",
         "value": 1
       },
       {
@@ -243,30 +359,33 @@
     ],
     "maleFullTime": [
       {
-        "label": "Michal",
+        "label": "Jana",
+        "value": 2
+      },
+      {
+        "label": "Lenka",
+        "value": 1
+      },
+      {
+        "label": "Eva",
+        "value": 1
+      },
+      {
+        "label": "Kateřina",
+        "value": 1
+      },
+      {
+        "label": "Martin",
+        "value": 1
+      },
+      {
+        "label": "Josef",
         "value": 1
       },
       {
         "label": "František",
         "value": 1
-      },
-      {
-        "label": "Tomáš",
-        "value": 1
-      },
-      {
-        "label": "Jiří",
-        "value": 1
-      },
-      {
-        "label": "Petr",
-        "value": 1
-      },
-      {
-        "label": "Jan",
-        "value": 1
       }
     ]
   }
 }
-
