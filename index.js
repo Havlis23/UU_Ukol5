@@ -24,6 +24,7 @@ function generateEmployeeData(dtoIn) {
     const { count, age } = dtoIn;
     const employees = [];
 
+    // Generování zaměstnanců
     for (let i = 0; i < count; i++) {
         const gender = Math.random() < 0.5 ? "male" : "female";
         const names = gender === "male" ? maleFnames : femaleFnames;
@@ -32,6 +33,7 @@ function generateEmployeeData(dtoIn) {
         const nameIndex = Math.floor(Math.random() * names.length);
         const surnameIndex = Math.floor(Math.random() * surnames.length);
 
+        // Přidání zaměstnance do seznamu
         employees.push({
             gender,
             birthdate: generateRandomBirthdate(age.min, age.max),
@@ -53,6 +55,7 @@ function getEmployeeChartContent(employees) {
         }, {});
     };
 
+    // Seřazení a formátování jmen
     const sortAndFormatNames = (nameCount) => {
         return Object.entries(nameCount)
             .sort((a, b) => b[1] - a[1])
@@ -68,12 +71,14 @@ function getEmployeeChartContent(employees) {
             .map(([label, value]) => ({ label, value }));
     };
 
+    // Získání všech jmen
     const allNames = countNames(employees);
     const maleFnames = countNames(employees.filter(emp => emp.gender === 'male'));
     const femaleFnames = countNames(employees.filter(emp => emp.gender === 'female'));
     const femalePartTimeNames = countNames(employees.filter(emp => emp.gender === 'female' && emp.workload < 40));
     const maleFullTimeNames = countNames(employees.filter(emp => emp.gender === 'male' && emp.workload === 40));
 
+    // Výstup
     return {
         names: {
             all: sortAndFormatNames(allNames),
