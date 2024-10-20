@@ -1,6 +1,8 @@
-// Pole jmen a příjmení; nezaobírám se s přechylováním
-const names = ["Jan", "Petr", "Pavel", "Martin", "Tomáš", "Jiří", "Jaroslav", "Michal", "František", "Josef", "Marie", "Jana", "Eva", "Hana", "Anna", "Lenka", "Kateřina", "Lucie", "Věra", "Alena"];
-const surnames = ["Novák", "Svoboda", "Novotný", "Dvořák", "Černý", "Procházka", "Kučera", "Veselý", "Horák", "Němec", "Nováková", "Svobodová", "Novotná", "Dvořáková", "Černá", "Procházková", "Kučerová", "Veselá", "Horáková", "Němcová"];
+// Pole jmen a příjmení rozdělená podle pohlaví
+const maleFnames = ["Jan", "Petr", "Pavel", "Martin", "Tomáš", "Jiří", "Jaroslav", "Michal", "František", "Josef"];
+const femaleFnames = ["Marie", "Jana", "Eva", "Hana", "Anna", "Lenka", "Kateřina", "Lucie", "Věra", "Alena"];
+const maleLnames = ["Novák", "Svoboda", "Novotný", "Dvořák", "Černý", "Procházka", "Kučera", "Veselý", "Horák", "Němec"];
+const femaleLnames = ["Nováková", "Svobodová", "Novotná", "Dvořáková", "Černá", "Procházková", "Kučerová", "Veselá", "Horáková", "Němcová"];
 
 // Funkce pro generování náhodného data narození
 function generateRandomBirthdate(minAge, maxAge) {
@@ -9,11 +11,6 @@ function generateRandomBirthdate(minAge, maxAge) {
     const maxDate = new Date(today.getFullYear() - minAge, today.getMonth(), today.getDate());
     const randomDate = new Date(minDate.getTime() + Math.random() * (maxDate.getTime() - minDate.getTime()));
     return randomDate.toISOString();
-}
-
-// Funkce pro náhodný výběr pohlaví; nezaobírám se s genderem, takze Tomáš Dvořák je žena
-function generateRandomGender() {
-    return Math.random() < 0.5 ? "male" : "female";
 }
 
 // Funkce pro náhodný výběr pracovního úvazku
@@ -28,7 +25,10 @@ function generateEmployeeData(dtoIn) {
     const employees = [];
 
     for (let i = 0; i < count; i++) {
-        const gender = generateRandomGender();
+        const gender = Math.random() < 0.5 ? "male" : "female";
+        const names = gender === "male" ? maleFnames : femaleFnames;
+        const surnames = gender === "male" ? maleLnames : femaleLnames;
+
         const nameIndex = Math.floor(Math.random() * names.length);
         const surnameIndex = Math.floor(Math.random() * surnames.length);
 
@@ -69,23 +69,23 @@ function getEmployeeChartContent(employees) {
     };
 
     const allNames = countNames(employees);
-    const maleNames = countNames(employees.filter(emp => emp.gender === 'male'));
-    const femaleNames = countNames(employees.filter(emp => emp.gender === 'female'));
+    const maleFnames = countNames(employees.filter(emp => emp.gender === 'male'));
+    const femaleFnames = countNames(employees.filter(emp => emp.gender === 'female'));
     const femalePartTimeNames = countNames(employees.filter(emp => emp.gender === 'female' && emp.workload < 40));
     const maleFullTimeNames = countNames(employees.filter(emp => emp.gender === 'male' && emp.workload === 40));
 
     return {
         names: {
             all: sortAndFormatNames(allNames),
-            male: sortAndFormatNames(maleNames),
-            female: sortAndFormatNames(femaleNames),
+            male: sortAndFormatNames(maleFnames),
+            female: sortAndFormatNames(femaleFnames),
             femalePartTime: sortAndFormatNames(femalePartTimeNames),
             maleFullTime: sortAndFormatNames(maleFullTimeNames)
         },
         chartData: {
             all: createChartData(allNames),
-            male: createChartData(maleNames),
-            female: createChartData(femaleNames),
+            male: createChartData(maleFnames),
+            female: createChartData(femaleFnames),
             femalePartTime: createChartData(femalePartTimeNames),
             maleFullTime: createChartData(maleFullTimeNames)
         }
@@ -107,6 +107,6 @@ const dtoIn = {
     }
 };
 
-//výpis
+// výpis
 const dtoOut = main(dtoIn);
 console.log(JSON.stringify(dtoOut, null, 2));
