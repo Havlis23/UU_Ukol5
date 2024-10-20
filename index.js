@@ -13,6 +13,7 @@ function generateRandomBirthdate(minAge, maxAge) {
     return randomDate.toISOString();
 }
 
+
 // Funkce pro náhodný výběr pracovního úvazku
 function generateRandomWorkload() {
     const workloads = [10, 20, 30, 40];
